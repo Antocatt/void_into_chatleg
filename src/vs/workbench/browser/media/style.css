@@ -9,24 +9,25 @@
 
 /* Font Families (with CJK support) */
 
-.monaco-workbench.mac { font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
-.monaco-workbench.mac:lang(zh-Hans) { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", sans-serif; }
-.monaco-workbench.mac:lang(zh-Hant) { font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", sans-serif; }
-.monaco-workbench.mac:lang(ja) { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic Pro", sans-serif; }
-.monaco-workbench.mac:lang(ko) { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Nanum Gothic", "AppleGothic", sans-serif; }
 
-.monaco-workbench.windows { font-family: "Segoe WPC", "Segoe UI", sans-serif; }
-.monaco-workbench.windows:lang(zh-Hans) { font-family: "Segoe WPC", "Segoe UI", "Microsoft YaHei", sans-serif; }
-.monaco-workbench.windows:lang(zh-Hant) { font-family: "Segoe WPC", "Segoe UI", "Microsoft Jhenghei", sans-serif; }
-.monaco-workbench.windows:lang(ja) { font-family: "Segoe WPC", "Segoe UI", "Yu Gothic UI", "Meiryo UI", sans-serif; }
-.monaco-workbench.windows:lang(ko) { font-family: "Segoe WPC", "Segoe UI", "Malgun Gothic", "Dotom", sans-serif; }
+.monaco-workbench.mac { font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif; }
+.monaco-workbench.mac:lang(zh-Hans) { font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", sans-serif; }
+.monaco-workbench.mac:lang(zh-Hant) { font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "PingFang TC", sans-serif; }
+.monaco-workbench.mac:lang(ja) { font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic Pro", sans-serif; }
+.monaco-workbench.mac:lang(ko) { font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Nanum Gothic", "AppleGothic", sans-serif; }
+
+.monaco-workbench.windows { font-family: 'Montserrat', "Segoe WPC", "Segoe UI", sans-serif; }
+.monaco-workbench.windows:lang(zh-Hans) { font-family: 'Montserrat', "Segoe WPC", "Segoe UI", "Microsoft YaHei", sans-serif; }
+.monaco-workbench.windows:lang(zh-Hant) { font-family: 'Montserrat', "Segoe WPC", "Segoe UI", "Microsoft Jhenghei", sans-serif; }
+.monaco-workbench.windows:lang(ja) { font-family: 'Montserrat', "Segoe WPC", "Segoe UI", "Yu Gothic UI", "Meiryo UI", sans-serif; }
+.monaco-workbench.windows:lang(ko) { font-family: 'Montserrat', "Segoe WPC", "Segoe UI", "Malgun Gothic", "Dotom", sans-serif; }
 
 /* Linux: add `system-ui` as first font and not `Ubuntu` to allow other distribution pick their standard OS font */
-.monaco-workbench.linux { font-family: system-ui, "Ubuntu", "Droid Sans", sans-serif; }
-.monaco-workbench.linux:lang(zh-Hans) { font-family: system-ui, "Ubuntu", "Droid Sans", "Source Han Sans SC", "Source Han Sans CN", "Source Han Sans", sans-serif; }
-.monaco-workbench.linux:lang(zh-Hant) { font-family: system-ui, "Ubuntu", "Droid Sans", "Source Han Sans TC", "Source Han Sans TW", "Source Han Sans", sans-serif; }
-.monaco-workbench.linux:lang(ja) { font-family: system-ui, "Ubuntu", "Droid Sans", "Source Han Sans J", "Source Han Sans JP", "Source Han Sans", sans-serif; }
-.monaco-workbench.linux:lang(ko) { font-family: system-ui, "Ubuntu", "Droid Sans", "Source Han Sans K", "Source Han Sans JR", "Source Han Sans", "UnDotum", "FBaekmuk Gulim", sans-serif; }
+.monaco-workbench.linux { font-family: 'Montserrat', system-ui, "Ubuntu", "Droid Sans", sans-serif; }
+.monaco-workbench.linux:lang(zh-Hans) { font-family: 'Montserrat', system-ui, "Ubuntu", "Droid Sans", "Source Han Sans SC", "Source Han Sans CN", "Source Han Sans", sans-serif; }
+.monaco-workbench.linux:lang(zh-Hant) { font-family: 'Montserrat', system-ui, "Ubuntu", "Droid Sans", "Source Han Sans TC", "Source Han Sans TW", "Source Han Sans", sans-serif; }
+.monaco-workbench.linux:lang(ja) { font-family: 'Montserrat', system-ui, "Ubuntu", "Droid Sans", "Source Han Sans J", "Source Han Sans JP", "Source Han Sans", sans-serif; }
+.monaco-workbench.linux:lang(ko) { font-family: 'Montserrat', system-ui, "Ubuntu", "Droid Sans", "Source Han Sans K", "Source Han Sans JR", "Source Han Sans", "UnDotum", "FBaekmuk Gulim", sans-serif; }
 
 .monaco-workbench.mac { --monaco-monospace-font: "SF Mono", Monaco, Menlo, Courier, monospace; }
 .monaco-workbench.windows { --monaco-monospace-font: Consolas, "Courier New", monospace; }
@@ -34,24 +35,58 @@
 
 /* Global Styles */
 
+:root {
+        --chatleg-accent: #3aa6b9;
+        --chatleg-accent-strong: #2a8ca0;
+        --chatleg-glass-surface: rgba(11, 31, 42, 0.6);
+        --chatleg-glass-stroke: rgba(255, 255, 255, 0.08);
+        --chatleg-glass-highlight: rgba(255, 255, 255, 0.14);
+}
+
 body {
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	font-size: 11px;
-	user-select: none;
-	-webkit-user-select: none;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: 'Montserrat', 'Segoe UI', -apple-system, system-ui, sans-serif;
+        font-size: 11px;
+        user-select: none;
+        -webkit-user-select: none;
+        background: radial-gradient(circle at 15% 20%, rgba(58, 166, 185, 0.25), transparent 35%),
+                radial-gradient(circle at 80% 0%, rgba(58, 166, 185, 0.18), transparent 30%),
+                linear-gradient(145deg, #08131b 0%, #0f1f2a 45%, #0a171f 100%);
+        color: var(--vscode-foreground);
+}
+
+body::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.14), rgba(58, 166, 185, 0.12));
+        opacity: 0.75;
+        pointer-events: none;
+        filter: blur(42px) saturate(1.1);
+        z-index: 0;
 }
 
 .monaco-workbench {
-	font-size: 13px;
-	line-height: 1.4em;
-	position: relative;
-	z-index: 1;
-	overflow: hidden;
-	color: var(--vscode-foreground);
+        font-size: 13px;
+        line-height: 1.4em;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        color: var(--vscode-foreground);
+        background: var(--chatleg-glass-surface);
+        backdrop-filter: blur(28px) saturate(1.35);
+        -webkit-backdrop-filter: blur(28px) saturate(1.35);
+        border: 1px solid var(--chatleg-glass-stroke);
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(58, 166, 185, 0.2);
+        border-radius: 30px;
+}
+
+.monaco-workbench ::selection {
+        background: rgba(58, 166, 185, 0.35);
 }
 
 .monaco-workbench.web {
@@ -60,16 +95,18 @@ body {
 }
 
 .monaco-workbench.border:not(.fullscreen) {
-	box-sizing: border-box;
-	border: 1px solid var(--window-border-color);
+        box-sizing: border-box;
+        border: 1px solid var(--window-border-color);
+        border-radius: 30px;
+        overflow: hidden;
 }
 
 .monaco-workbench.border.mac {
-	border-radius: 5px;
+        border-radius: 30px;
 }
 
 .monaco-workbench.border.mac.macos-bigsur-or-newer {
-	border-radius: 10px; /* macOS Big Sur increased rounded corners size */
+        border-radius: 30px;
 }
 
 .monaco-workbench img {
@@ -77,16 +114,22 @@ body {
 }
 
 .monaco-workbench label {
-	cursor: pointer;
+        cursor: pointer;
 }
 
 .monaco-workbench a {
-	text-decoration: none;
+        text-decoration: none;
+        color: var(--chatleg-accent);
+        transition: color 120ms ease, filter 120ms ease;
+}
+
+.monaco-workbench a:hover {
+        color: var(--chatleg-accent-strong);
 }
 
 
 .monaco-workbench p > a {
-	text-decoration: var(--text-link-decoration);
+        text-decoration: var(--text-link-decoration);
 }
 
 .monaco-workbench.underline-links {
@@ -138,8 +181,61 @@ body {
 .monaco-workbench textarea::-webkit-input-placeholder { color: var(--vscode-input-placeholderForeground); }
 .monaco-workbench textarea::-moz-placeholder { color: var(--vscode-input-placeholderForeground); }
 
+.monaco-workbench input,
+.monaco-workbench textarea,
+.monaco-workbench select {
+        border-radius: 18px;
+        border: 1px solid var(--chatleg-glass-stroke);
+        background-color: rgba(255, 255, 255, 0.04);
+        transition: border-color 120ms ease, box-shadow 160ms ease, background-color 160ms ease;
+}
+
+.monaco-workbench input:focus,
+.monaco-workbench textarea:focus,
+.monaco-workbench select:focus {
+        border-color: var(--chatleg-accent);
+        box-shadow: 0 0 0 3px rgba(58, 166, 185, 0.25);
+        background-color: rgba(255, 255, 255, 0.08);
+        outline: none;
+}
+
+.monaco-workbench .monaco-button,
+.monaco-workbench .monaco-text-button {
+        border-radius: 20px;
+        background: linear-gradient(135deg, var(--chatleg-accent), var(--chatleg-accent-strong));
+        border: 1px solid var(--chatleg-glass-highlight);
+        color: #0a0f14;
+        box-shadow: 0 18px 36px rgba(58, 166, 185, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.08);
+        transition: transform 120ms ease, box-shadow 200ms ease, filter 160ms ease;
+}
+
+.monaco-workbench .monaco-button:hover,
+.monaco-workbench .monaco-text-button:hover {
+        transform: translateY(-1px);
+        filter: brightness(1.05);
+        box-shadow: 0 22px 46px rgba(58, 166, 185, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.monaco-workbench .monaco-button:active,
+.monaco-workbench .monaco-text-button:active {
+        transform: translateY(0);
+        box-shadow: 0 14px 30px rgba(58, 166, 185, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.monaco-workbench .monaco-button:focus-visible,
+.monaco-workbench .monaco-text-button:focus-visible {
+        outline: 2px solid rgba(58, 166, 185, 0.6);
+        outline-offset: 2px;
+}
+
+.monaco-workbench .monaco-button:disabled,
+.monaco-workbench .monaco-text-button:disabled {
+        opacity: 0.55;
+        box-shadow: none;
+}
+
 .monaco-workbench .pointer {
-	cursor: pointer;
+        cursor: pointer;
 }
 
 .monaco-workbench.mac.monaco-font-aliasing-antialiased {
