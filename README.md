@@ -36,5 +36,8 @@ Void is a fork of the [vscode](https://github.com/microsoft/vscode) repository. 
 ## Note
 Work is temporarily paused on the Void IDE (this repo) while we experiment with a few novel AI coding ideas for Void. Stay alerted with new releases in our Discord channel.
 
+## ChatLeg Agent Transformation Plan
+We are exploring how to adapt the Void codebase into ChatLeg Agent, a legal-focused desktop workspace with a rich document editor, legal tasking agent, and legislative research tooling. You can review the full transformation blueprint in [docs/CHATLEG_TRANSFORMATION_PLAN.md](docs/CHATLEG_TRANSFORMATION_PLAN.md), follow the runnable checklist in [docs/CHATLEG_EXECUTION_STEPS.md](docs/CHATLEG_EXECUTION_STEPS.md), and work through the granular [docs/CHATLEG_MICRO_STEPS.md](docs/CHATLEG_MICRO_STEPS.md) tasks.
+
 ## Support
 You can always reach us in our Discord server or contact us via email: hello@voideditor.com.
